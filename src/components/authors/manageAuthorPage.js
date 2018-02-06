@@ -69,7 +69,7 @@ var ManageAuthorPage = React.createClass({
         }
 
         AuthorApi.saveAuthor(this.state.author);
-        this.steState({ dirty: false });
+        this.setState({ dirty: false });
         toastr.success('Author saved.');
         this.transitionTo('authors');
     },
